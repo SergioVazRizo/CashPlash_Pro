@@ -1,0 +1,82 @@
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border: #92c59657 solid;
+    font-weight: 600;
+}
+
+th {
+    background-color: rgb(193, 245, 186);
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.opciones {
+    text-align: center;
+}
+
+tr th {
+    border: #92c59657 solid;
+}
+
+/* Estilos para las filas alternas */
+tbody tr:nth-child(even) {
+    background-color: #D1EED7;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #9DB4A2;
+}
+
+/* Resaltar fila al pasar el puntero */
+tbody tr:hover {
+    background-color: #96f0cc;
+    /* Cambia el color al pasar el puntero */
+    transition: background-color 0.3s ease;
+    /* Agrega transición suave */
+}
+
+.botones {
+    background-color: #E8F6EB;
+    border-radius: 20px;
+    border: #c4ddca solid;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.btn {
+    border: none;
+}
+
+.btnEdit {
+    background-color: #7bf17fdc;
+    border-radius: 5px;
+    border: none;
+    padding: 0 5px;
+    margin-right: 10px;
+}
+
+.btnDelete {
+    background-color: #f17d7bdc;
+    border-radius: 5px;
+    border: none;
+    padding: 0 5px;
+    margin-left: 10px;
+}

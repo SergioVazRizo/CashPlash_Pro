@@ -1,0 +1,92 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  overflow: hidden;
+  background: linear-gradient(to right, #d7ffc1, #539e44);
+}
+
+#main-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+header {
+  width: 70px;
+  height: 100vh;
+  background-color: #F0F3FF;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
+header div::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  width: calc(100vw - 70px);
+  height: 100vh;
+  /*background: linear-gradient(to right, #d7ffc1, #539e44);*/
+  background: #B3C8CF;
+  padding: 30px;
+}
+
+#module-table th,
+#module-table td {
+  padding: 5px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+
+}
+
+header button, header div button {
+  color: #7E92A2;
+  font-size: 2rem;
+  border: none;
+}
+
+head button i {
+  font-size: 2rem;
+  color: #7E92A2;
+}
+
+#btnExit {
+  transition: border-radius 1s ease;
+}
+
+#btnExit:hover {
+  background-color: #bb5757;
+  color: #F0F3FF;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar {
+  width: .45rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(27, 27, 27, .4);
+  border-radius: 20px;
+}
+::-webkit-scrollbar-track{
+  background: transparent;
+}

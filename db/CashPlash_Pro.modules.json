@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "65efd17c0049e7e89ef3f083"
+  },
+  "module_name": "Usuarios",
+  "icon": "bi-person-circle",
+  "inputs": [
+    {
+      "name": "name",
+      "type": "text",
+      "fiel_db": "name"
+    },
+    {
+      "name": "password",
+      "type": "password",
+      "fiel_db": "password"
+    }
+  ],
+  "collection_name": "users"
+},
+{
+  "_id": {
+    "$oid": "65efd25d0049e7e89ef3f088"
+  },
+  "module_name": "Productos",
+  "icon": "bi-bounding-box",
+  "inputs": [
+    {
+      "name": "code",
+      "type": "text",
+      "fiel_db": "code"
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "fiel_db": "name"
+    },
+    {
+      "name": "price",
+      "type": "number",
+      "fiel_db": "price"
+    }
+  ],
+  "collection_name": "products"
+}]

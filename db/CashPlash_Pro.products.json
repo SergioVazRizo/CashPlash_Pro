@@ -1,0 +1,96 @@
+[{
+  "_id": {
+    "$oid": "65e1f8a94b5a30aedd715ec6"
+  },
+  "code": "22001418",
+  "name": "Tornillo 2mm",
+  "price": 12.2
+},
+{
+  "_id": {
+    "$oid": "65eb3b69f4ae9a56ff2a7638"
+  },
+  "code": 22000825,
+  "name": "Cincel",
+  "price": 54.2
+},
+{
+  "_id": {
+    "$oid": "65ef20ca69b1dd0af618c7c2"
+  },
+  "code": 22001409,
+  "name": "Taladro",
+  "price": 1100.1
+},
+{
+  "_id": {
+    "$oid": "65ef224d69b1dd0af618c7c3"
+  },
+  "code": 22000980,
+  "name": "Martillo para zurdos",
+  "price": 67.6
+},
+{
+  "_id": {
+    "$oid": "65ef228f69b1dd0af618c7c4"
+  },
+  "code": 22002222,
+  "name": "Clavos",
+  "price": 1.2
+},
+{
+  "_id": {
+    "$oid": "65ef22d469b1dd0af618c7c6"
+  },
+  "code": 22002224,
+  "name": "serrucho",
+  "price": 12.2
+},
+{
+  "_id": {
+    "$oid": "65ef22f369b1dd0af618c7c7"
+  },
+  "code": 22001495,
+  "name": "Segeta",
+  "price": 12.2
+},
+{
+  "_id": {
+    "$oid": "65ef230f69b1dd0af618c7c8"
+  },
+  "code": 22000973,
+  "name": "Pinzas de corte",
+  "price": 12.2
+},
+{
+  "_id": {
+    "$oid": "65ef232d69b1dd0af618c7c9"
+  },
+  "code": 220001033,
+  "name": "Pinzas Electricas",
+  "price": 22.2
+},
+{
+  "_id": {
+    "$oid": "65ef234469b1dd0af618c7ca"
+  },
+  "code": 22001036,
+  "name": "Pinzas de Punta",
+  "price": 22.2
+},
+{
+  "_id": {
+    "$oid": "65ef236269b1dd0af618c7cb"
+  },
+  "code": 22001417,
+  "name": "Desarmador de cruz",
+  "price": 22.2
+},
+{
+  "_id": {
+    "$oid": "65ef237c69b1dd0af618c7cc"
+  },
+  "code": 22002343,
+  "name": "Mazo",
+  "price": 22.2
+}]

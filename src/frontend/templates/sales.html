@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="css/sales.css">
+
+<h1>Ventas</h1>
+<input type="text" id="txt-code">
+<table>
+	<thead>
+		<tr>
+			<th class="titulo">Nombre</th>
+			<th class="titulo">Cantidad</th>
+			<th class="titulo">Precio Unitario</th>
+			<th class="titulo">Precio Total</th>
+		</tr>
+	</thead>
+	<tbody></tbody>
+</table>
+<button type="button" class="botones" data-bs-toggle="modal" data-bs-target="#submit-sale" id="make-sale">
+	<i class="bi bi-basket3"></i> Cobrar: $<label>0.0</label></button>
+
+<div class="modal fade" id="submit-sale" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-scrollable">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3>Nueva Venta</h3>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<h3 id="final-price" style="text-align: center;">$<span></span> mxn</h3>
+				<div class="container">
+					<div class="row">
+						<div class="col-6">
+							<label for="txt-cash">Efectivo</label>
+							<input type="number" id="txt-cash" class="form-control" min="0" value="0">
+						</div>
+						<div class="col-6">
+							<label for="txt-change">Cambio</label>
+							<input type="number" id="txt-exchange" class="form-control" disabled>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+				<button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="btn-confirm">Realizar Venta</button>
+			</div>
+		</div>
+	</div>
+</div>

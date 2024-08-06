@@ -1,0 +1,83 @@
+#cards {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 175px;
+    height: 120px;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.3); /* Estilo de la sombra */
+}
+
+.card h4 {
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem 0rem 1rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.card p {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.module-name {
+    font-size: 1.5rem;
+    border: none;
+}
+
+.module-name:focus-visible {
+    outline: none;
+}
+
+.form-icons {
+    margin-bottom: 10px;
+    font-size: medium;
+}
+
+.form-icons h5 {
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+}
+
+.form-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.form-button button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-group {
+    padding-bottom: 5px;
+}
+.botones {
+    background-color: #E8F6EB;
+    border-radius: 20px;
+    border: none;
+}
+
+.line {
+    border: 1px solid #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 0px;
+}

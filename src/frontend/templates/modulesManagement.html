@@ -1,0 +1,171 @@
+<link rel="stylesheet" href="css/modulesManagement.css">
+
+<h1>Gestión de Modulos</h1>
+<div id="cards">
+  <div class="card" style="background-color: #D1EED7; color: black; font-weight: bolder;" data-bs-toggle="modal" data-bs-target="#createModule"
+    id="new-module">
+    <h4>Crear nuevo</h4>
+    <p><i class="bi bi-plus-circle"></i></p>
+  </div>
+</div>
+
+<div class="modal fade" id="createModule" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <input type="text" placeholder="Nombre del Modulo" class="module-name">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <div class="form-icons ">
+          <h5>Elige un icono: </h5>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="icons" value="bi-archive">
+            <label class="form-check-label"><i class="bi bi-archive " style="color: #7E92A2;"></i></label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="icons" value="bi-backpack-fill">
+            <label class="form-check-label"><i class="bi bi-backpack-fill " style="color: #7E92A2;"></i></label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="icons" value="bi-bag-heart-fill">
+            <label class="form-check-label"><i class="bi bi-bag-heart-fill " style="color: #7E92A2;"></i></label>
+          </div>
+          
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="icons" value="bi-bag">
+            <label class="form-check-label"><i class="bi bi-bag " style="color: #7E92A2;"></i></label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="icons" value="bi-bank">
+            <label class="form-check-label"><i class="bi bi-bank" style="color: #7E92A2;"></i></label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="icons" value="bi-bar-chart">
+            <label class="form-check-label"><i class="bi bi-bar-chart " style="color: #7E92A2;"></i></label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="icons" value="bi-book">
+            <label class="form-check-label"><i class="bi bi-book" style="color: #7E92A2;"></i></label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="icons" value="bi-box-fill">
+            <label class="form-check-label"><i class="bi bi-box-fill" style="color: #7E92A2;"></i></label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="icons" value="bi-briefcase">
+            <label class="form-check-label"><i class="bi bi-briefcase" style="color: #7E92A2;"></i></label>
+          </div>
+        </div>
+
+        <div class="form-inputs"></div>
+
+        <div class="form-button">
+          <button type="button" class="btn-Modal btn btn-primary" style="border-radius: 50%;">
+            +
+          </button>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-Modal btn btn-primary save-module">Guardar
+          cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="editModule" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <input type="text" placeholder="Nombre del Modulo" class="module-name">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <div class="form-icons ">
+          <h5>Elige un icono: </h5>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="icons" value="bi-archive">
+            <label class="form-check-label"><i class="bi bi-archive " style="color: #7E92A2;"></i></label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="icons" value="bi-backpack-fill">
+            <label class="form-check-label"><i class="bi bi-backpack-fill " style="color: #7E92A2;"></i></label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="icons" value="bi-bag-heart-fill">
+            <label class="form-check-label"><i class="bi bi-bag-heart-fill " style="color: #7E92A2;"></i></label>
+          </div>
+          
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="icons" value="bi-bag">
+            <label class="form-check-label"><i class="bi bi-bag " style="color: #7E92A2;"></i></label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="icons" value="bi-bank">
+            <label class="form-check-label"><i class="bi bi-bank" style="color: #7E92A2;"></i></label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="icons" value="bi-bar-chart">
+            <label class="form-check-label"><i class="bi bi-bar-chart " style="color: #7E92A2;"></i></label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="icons" value="bi-book">
+            <label class="form-check-label"><i class="bi bi-book" style="color: #7E92A2;"></i></label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="icons" value="bi-box-fill">
+            <label class="form-check-label"><i class="bi bi-box-fill" style="color: #7E92A2;"></i></label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="icons" value="bi-briefcase">
+            <label class="form-check-label"><i class="bi bi-briefcase" style="color: #7E92A2;"></i></label>
+          </div>
+        </div>
+
+        <div class="form-inputs">
+          <div class="old-inputs"></div>
+          <div class="line"></div>
+          <div class="new-inputs"></div>
+        </div>
+
+        <div class="form-button">
+          <button type="button" class="btn-Modal btn btn-primary" style="border-radius: 50%;">
+            +
+          </button>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class=" btn btn-Modal btn-danger" data-bs-dismiss="modal" data-bs-toggle="modal"
+          data-bs-target="#delete">Eliminar</button>
+        <button type="button" class="btn-Modal btn btn-primary save-module">Guardar
+          cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="delete" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Eliminar Modulo</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>¿Estas seguro de eliminar este modulo?</p>
+        <p class="text-danger">Esta acción no puede deshacerse y todos los registros de este modulo seran borrados</p>
+      </div>
+      <div class="modal-footer">
+        <input type="button" class="btn btn-default" data-bs-dismiss="modal" value="Cancelar">
+        <input type="button" class="btn btn-danger delete-module" value="Eliminar">
+      </div>
+    </div>
+  </div>
+</div>

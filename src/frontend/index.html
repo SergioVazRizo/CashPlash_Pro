@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+		rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../../node_modules/izitoast/dist/css/iziToast.min.css">
+	<link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="css/login.css">
+
+	<title>CashPlash Pro</title>
+</head>
+
+<body>
+
+	<div class="container" id="container">
+		<div class="form-container sign-up">
+			<form id="form-register">
+				<h1>Crear Usuario</h1>
+				<span>Recuerda tu Usuario y Contraseña</span>
+				<input type="text" placeholder="Usuario">
+				<input type="password" placeholder="Contraseña" class="form-control form-control-lg">
+				<input type="password" placeholder="Confirmar Contraseña" class="form-control form-control-lg">
+				<button type="submit" class="botones">Registrarse <i class="bi bi-journal-plus"></i></i></button>
+			</form>
+		</div>
+		<div class="form-container sign-in">
+			<form id="login">
+				<h1>Inicio Sesión</h1>
+
+				<span>Recuerda tu Usuario y Contraseña</span>
+				<input type="text" id="name" placeholder="Usuario">
+				<input type="password" id="password" placeholder="Contraseña" class="form-control form-control-lg">
+				<button type="submit" class="botones">Iniciar Sesión <i class="bi bi-door-open-fill"></i></button>
+			</form>
+		</div>
+		<div class="toggle-container">
+			<div class="toggle">
+				<div class="toggle-panel toggle-left">
+					<h1>Bienvenido Usuario!</h1>
+					<img src="img/logo2.png" alt="">
+					<button class="hidden" id="btnLogin">Iniciar Sesión <i class="bi bi-door-open-fill"></i></button>
+				</div>
+				<div class="toggle-panel toggle-right">
+					<h1>Hola, Usuario!!</h1>
+					<img src="img/logo2.png" alt="">
+					<button class="hidden" id="register">Registrarse <i class="bi bi-journal-plus"></i></button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- JavaScript libraries -->
+	<script src="../../node_modules/izitoast/dist/js/iziToast.min.js"></script>
+	<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<!-- Custom JavaScript -->
+	<script>
+
+		const container = document.getElementById('container');
+		const registerBtn = document.getElementById('register');
+		const login = document.getElementById('login');
+		const btnLogin = document.getElementById('btnLogin')
+		const formRegister = document.getElementById('form-register')
+
+		registerBtn.addEventListener('click', () => {
+			container.classList.add("active");
+		});
+
+		btnLogin.addEventListener('click', () => {
+			container.classList.remove("active");
+		});
+
+		login.addEventListener('submit', (e) => {
+			e.preventDefault()
+			user = {
+				name: document.querySelector('#name').value,
+				password: document.querySelector('#password').value
+			}
+			window.log.check(user, (isFound) => {
+				if (isFound) {
+					window.localStorage.setItem('user', user.name)
+					// Mostrar mensaje de bienvenida personalizado con iziToast
+					const toast = iziToast.show({
+						title: '¡Bienvenido!',
+						message: `Hola, ${user.name}. ¡Has iniciado sesión exitosamente!`,
+						position: 'topRight',
+						timeout: 1000,
+						close: false,
+						image: 'img/logo.png',
+						backgroundColor: '#5BF37C',
+						titleColor: '#000000',
+						messageColor: '#000000',
+						overlay: true,
+						overlayClose: true,
+						progressBar: false,
+						transitionIn: 'fadeInDown',
+						transitionOut: 'fadeOutUp'
+					});
+
+					// Redireccionar a la página principal después de quitar el mensaje
+					setTimeout(() => {
+						window.location.href = './main.html';
+					}, 2000);
+				}
+			})
+		});
+
+		formRegister.addEventListener('submit', (e) => {
+			e.preventDefault()
+			const name = document.querySelector('#form-register input[type="text"]').value
+			const password = document.querySelectorAll('#form-register input[type="password"]')[0].value
+			const confirmPassword = document.querySelectorAll('#form-register input[type="password"]')[1].value
+
+			if (password === confirmPassword) {
+				user = {
+					name: name,
+					password: password
+				}
+				window.log.register(user, (isRegistered) => {
+				if (isRegistered) {
+					window.localStorage.setItem('user', user.name)
+					iziToast.success({
+						title: '¡Registro exitoso!',
+						message: `Usuario ${user.name} registrado exitosamente`,
+						position: 'topRight',
+						timeout: 2000,
+						image: 'img/logo.png',
+						backgroundColor: '#5BF37C',
+						titleColor: '#000000',
+						messageColor: '#000000',
+						overlay: true,
+						overlayClose: true,
+						progressBar: false,
+						transitionIn: 'fadeInDown',
+						transitionOut: 'fadeOutUp'
+					})
+					setTimeout(() => {
+						window.location.href = './main.html';
+					}, 2000)
+				} else {
+					iziToast.error({
+						title: '¡Error!',
+						message: 'El usuario ya existe',
+						position: 'topRight',
+						timeout: 2000,
+						image: 'img/logo.png',
+						backgroundColor: '#F37C5B',
+						titleColor: '#000000',
+						messageColor: '#000000',
+						overlay: true,
+						overlayClose: true,
+						progressBar: false,
+						transitionIn: 'fadeInDown',
+						transitionOut: 'fadeOutUp'
+					});
+				}
+			})
+			} else {
+				iziToast.error({
+					title: '¡Error!',
+					message: 'Las contraseñas no coinciden',
+					position: 'topRight',
+					timeout: 2000,
+					image: 'img/logo.png',
+					backgroundColor: '#F37C5B',
+					titleColor: '#000000',
+					messageColor: '#000000',
+					overlay: true,
+					overlayClose: true,
+					progressBar: false,
+					transitionIn: 'fadeInDown',
+					transitionOut: 'fadeOutUp'
+				});
+			}
+		});
+	</script>
+</body>
+
+</html>

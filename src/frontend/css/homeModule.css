@@ -1,0 +1,79 @@
+.recentSales,
+.employees,
+.sales {
+    background-color: #D1EED7;
+    border-radius: 20px;
+    padding: 10px;
+    border: white 2px solid;
+}
+
+h5 {
+    text-align: center;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.recentSales {
+    height: 300px;
+}
+
+.employees,
+.sales {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-emp,
+.icon-sal {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-emp {
+    background-image: linear-gradient(to bottom, rgb(83, 215, 134), transparent);
+}
+
+.icon-sal {
+    background-image: linear-gradient(to bottom, rgb(197, 88, 88), transparent);
+}
+
+.icon-emp i,
+.icon-sal i {
+    font-size: 30px;
+}
+
+.recentSales table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recentSales th,
+.recentSales td {
+    padding: 8px;
+    border: 1px solid rgb(143, 202, 165);
+    text-align: center;
+    font-weight: 600;
+}
+
+.recentSales i {
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .col-12 {
+        padding: 0px !important;
+    }    
+}

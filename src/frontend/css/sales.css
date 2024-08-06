@@ -1,0 +1,54 @@
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #C5DCCA;
+    font-weight: bold;
+}
+
+/* Estilos para las filas alternas */
+tbody tr:nth-child(even) {
+    background-color: #D1EED7;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #9DB4A2;
+}
+
+/* Resaltar fila al pasar el puntero */
+tbody tr:hover {
+    background-color: #96f0cc;
+    /* Cambia el color al pasar el puntero */
+    transition: background-color 0.3s ease;
+    /* Agrega transición suave */
+}
+
+
+.titulo {
+    background-color: rgb(193, 245, 186);
+    font-weight: 600;
+}
+
+.botones {
+    background-color: #E8F6EB;
+    border-radius: 20px;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: solid #9DB4A2;
+    margin-bottom: 5px;
+    font-weight: 600;
+}

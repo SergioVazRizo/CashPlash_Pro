@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../node_modules/izitoast/dist/css/iziToast.min.css">
+  <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/loadPage.css">
+
+  <title>CashPlash Pro</title>
+</head>
+
+<body>
+  <div id="load">
+    <div class="lds-roller">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div><br>
+    <h5>Cargando...</h5>
+  </div>
+  <div id="main-page">
+    <header>
+      <!-- Quita el icono del botón y agrega una imagen -->
+      <button id="btnHome" style="padding: 6px 0;">
+        <img src="img/logo2.png" alt="Home" style="height: aut; width: 3rem;">
+      </button>
+      <button id="btnManagement">
+        <i class="bi bi-app-indicator"></i>
+      </button>
+      <button id="btnSales">
+        <i class="bi bi-basket3"></i>
+      </button>
+      <div></div>
+      <button id="btnExit">
+        <i class="bi bi-escape"></i>
+        </button>
+    </header>
+    <main class="overflow-auto"></main>
+  </div>
+
+  <!-- JS -->
+  <script src="../../node_modules/izitoast/dist/js/iziToast.min.js"></script>
+  <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../../node_modules/bigdecimal/lib/bigdecimal.js"></script>
+  <script type="module" src="js/controller.js"></script>
+</body>
+
+</html>

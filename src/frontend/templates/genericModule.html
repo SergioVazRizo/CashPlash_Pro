@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="css/genericModule.css">
+
+<h1 class="module-name"></h1>
+<div class="d-flex mb-2 gap-1">
+  <button data-bs-toggle="modal" data-bs-target="#controlModule" class="botones" id="new-register">Nuevo</button>
+  <div class="input-group rounded">
+    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+    <span class="input-group-text border-0" id="search-addon">
+      <i class="bi bi-search"></i>
+    </span>
+  </div>
+</div>
+<table id="module-table">
+  <thead>
+    <tr></tr>
+  </thead>
+  <tbody id="registers">
+    </div>
+</table>
+
+<div class="modal fade" id="controlModule" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <form class="modal-content" id="module-form">
+      <div class="modal-header">
+        <h1 class="module-name"></h1>
+        <button type="button" class="btn-close"  data-bs-dismiss="modal" style="padding-bottom  :20px ;" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-Modal btn-primary" id="save" data-bs-dismiss="modal" aria-label="Close">Guardar
+          cambios</button>
+      </div>
+    </form>
+  </div>
+</div>
