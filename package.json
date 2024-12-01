@@ -51,6 +51,7 @@
     "bigdecimal": "^0.6.1",
     "bootstrap": "^5.3.2",
     "bootstrap-icons": "^1.11.3",
+    "cashplash_pro": "file:",
     "izitoast": "^1.4.0",
     "mongodb": "^6.3.0"
   }
