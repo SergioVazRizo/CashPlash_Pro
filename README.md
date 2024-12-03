@@ -11,3 +11,5 @@ Se agrega el archivo style.css
 se acualiza la funcion main
 
 Se agrega el archivo app.js
+
+Se agrega el archivo app.css
